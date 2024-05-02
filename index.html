@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Product Creator</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Smythe&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Create Your Product JSON</h1>
+    <form id="product-form">
+        <div class="form-group">
+            <label for="image-url">Image URL:</label>
+            <input type="text" id="image-url" name="image-url" placeholder="Enter image URL">
+        </div>
+        <div class="form-group">
+            <label for="product-name">Product Name:</label>
+            <input type="text" id="product-name" name="product-name" placeholder="Enter product name">
+        </div>
+        <div class="form-group">
+            <label for="description">Description (Max 120 characters):</label>
+            <textarea id="description" name="description" maxlength="120" placeholder="Describe your product"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" min="0" placeholder="Enter price">
+        </div>
+        <div class="form-group">
+            <label for="phone-number">Phone Number:</label>
+            <input type="Number" id="phone-number" name="phone-number" placeholder="Enter phone number">
+        </div>
+        <div class="form-group">
+            <label for="text">Text:</label>
+            <input type="text" id="text" name="text" placeholder="Enter your message">
+        </div>
+        <button type="button" id="ok-btn">OK</button>
+    </form>
+    <div>
+      
+    
+ <div class="container">
+    <div id="output-container">
+       <img  src="clear.png" onClick="clearLocalStorage()" id="clear-local-storage-btn">
+    </div>
+
+    <button id="copy-btn">Copy JSON to Clipboard</button>
+
+    <button id="next-btn">Next</button>
+   
+
+ </div>
+    <script src="script.js"></script>
+</body>
+</html>

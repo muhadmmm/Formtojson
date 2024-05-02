@@ -1,0 +1,85 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  height:auto;
+}
+
+h1 {
+  color: #333;
+  font-family: "Smythe", system-ui;
+  font-weight: 400pc;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 40px;
+}
+
+#product-form {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: .8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  transition: border-color .3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+  border-color: #007bff;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background .3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+#copy-btn,
+#next-btn {
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+}
+#output-container{
+  position: relative;
+  width: 90%;
+  height: auto;
+  overflow: hidden;
+  left:20px;
+}
+#clear-local-storage-btn{
+  display:none;
+  position: absolute;
+  margin:10px;
+  left: 80%;
+  width: 20px;
+  height: 20px;
+  padding: 10px;;
+  border: solid 1px black;
+  border-radius: 20px;
+}
